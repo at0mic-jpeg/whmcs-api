@@ -1,3 +1,8 @@
+/**
+ * @author Om Bhende
+ * @module whmcs-api
+*/
+
 const fetch = require("node-fetch")
 const prepare = require("querystring")
 
