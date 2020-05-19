@@ -2,7 +2,7 @@
   "name": "whmcs-api",
   "version": "1.0.0",
   "description": "Javascript based client for WHMCS API.",
-  "main": "src/Index.js",
+  "main": "Index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
