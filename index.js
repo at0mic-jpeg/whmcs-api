@@ -6,19 +6,20 @@
 const fetch = require("node-fetch")
 const prepare = require("querystring")
 
-/**
- * Initializer.
- * @param {object} object 
- * @param {string} object.accesskey WHMCS API Accesskey
- * @param {string} object.responsetype WHMCS API Response Type (Default: JSON)
 
- * @param {string} object.username WHMCS API Username
- * @param {string} object.password WHMCS API Password
- * OR
- * @param {string} object.identifier WHMCS API Username
- * @param {string} object.secret WHMCS API Password
-*/
 class WHMCS {
+    /**
+     * Initializer.
+     * @param {object} object 
+     * @param {string} object.accesskey WHMCS API Accesskey
+     * @param {string} object.responsetype WHMCS API Response Type (Default: JSON)
+
+    * @param {string} object.username WHMCS API Username
+    * @param {string} object.password WHMCS API Password
+    * OR
+    * @param {string} object.identifier WHMCS API Username
+    * @param {string} object.secret WHMCS API Password
+    */
     constructor(object) {
         this.eval = {}  
         for (let key in object) {
