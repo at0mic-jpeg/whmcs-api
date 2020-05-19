@@ -47,7 +47,7 @@ module.exports.call = (api, params) => {
                 }
             }
         } else {
-            reject(`Object having parameters expected at param #1. Expected ${typeof(params)}`)
+            reject(`Object having parameters expected at param #1. Found ${typeof(params)}`)
         }
         fetch(`${this.eval.endpoint}?${prepare.stringify(this.eval)}`).then(res => {
             res.json().then(data => {
