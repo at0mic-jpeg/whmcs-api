@@ -1,6 +1,11 @@
 # WHMCS-API
 _WHMCS API is a client platform made in nodejs for WHMCS_
 
+**Installation**
+```
+npm i whmcs-api --save
+```
+
 **Initializing**
 ```javascript
 const Client = require("whmcs-api")
