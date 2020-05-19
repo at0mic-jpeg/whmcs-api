@@ -44,7 +44,7 @@ whmcs.call("GetInvoice", {
 
   // OR
 
-  whmcs.call("GetTickets")
+whmcs.call("GetTickets")
   .then(data => console.log(data))
   .catch(error => console.error(error))
 ```
