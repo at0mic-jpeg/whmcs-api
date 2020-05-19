@@ -3,6 +3,8 @@ _WHMCS API is a client platform made in nodejs for WHMCS_
 
 **Initializing**
 ```javascript
+const Client = require("whmcs-api")
+
 let init = {
         // Specifying API.php Endpoint
         "endpoint": "path/to/includes/api.php",
@@ -16,7 +18,7 @@ let init = {
         "accesskey":"",
         "responsetype":"json" // Change this to break the module :-)
     }
-whmcs.initialize(init)
+const whmcs = new Client(init)
 ```
 
 **Calling API**
@@ -26,7 +28,7 @@ whmcs.initialize(init)
 ```javascript
 whmcs.call(API_Index, Parameters)
     .then(data => console.log(data))
-    .catch(error => console.error(new Error(error)))
+    .catch(error => console.error(error))
 ```
 *Parameters should contain the API Index's Request Parameter.*
 
@@ -38,5 +40,11 @@ whmcs.call(API_Index, Parameters)
 whmcs.call("GetInvoice", {
     invoiceid: 1
 }).then(data => console.log(data))
-  .catch(error => console.error(new Error(error)))
+  .catch(error => console.error(error))
+
+  // OR
+
+  whmcs.call("GetTickets")
+  .then(data => console.log(data))
+  .catch(error => console.error(error))
 ```

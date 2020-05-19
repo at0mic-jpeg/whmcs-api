@@ -1,6 +1,6 @@
 {
   "name": "whmcs-api",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "Javascript based client for WHMCS API.",
   "main": "index.js",
   "scripts": {
